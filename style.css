@@ -1,83 +1,64 @@
-
-/* ADD @import statements ABOVE this line  */
-
-/*  ------------------------------------------------------
-    BASIC PAGE STYLING
-    Here you can set typography, colors and overall page styling
-    ------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 html{
     font-size: 100%;
+    font-family: "Montserrat", sans-serif;
+  }
+figcaption{
+  color: whitesmoke;
 }
-body{
-    /* Here you can set your default font-family, line-height 
-        You can also use max-width and auto margins to limit the width of the page content
-        If you set a background-color here it will be the site background color.
-    */
-
-}
-h1,h2,h3,h4,h5,h6{
-    /* Here you can set the font-family for your headings */
-
-}
-
-/*  ------------------------------------------------------
-    HYPERLINK STYLING 
-    Change the colors here to match the colors you want for your site.
-    ------------------------------------------------------ */ 
 a{
-    color: #1313f1;
-    text-decoration: none;
-    border-bottom: 1px solid #1313f1;
-}
-a:hover{
-    color: #0fa4df;
-    border-bottom: 3px solid #0fa4df;
+    color: beige;
 }
 a:visited{
-    color: #1313f1;
-    border-bottom: 1px solid #1313f1;
+    color: beige;
+    border-bottom: 1px solid beige;
+}
+  h1{
+    font-size: 3rem;
+    font-family: "Lexend Zetta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+  }
+  h2{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+  }
+  h3{
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+  }
+  p{
+    font-family: "Merriweather", serif;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+  }
+  .site-title{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+  }
+  h4{
+    color: rgb(255, 255, 255);
+  }
+  footer{
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
+  }
+  
+body{
+    background-color: rgb(235, 240, 240);
+    line-height: 1.4;
+    max-width: 70ch;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/*  ------------------------------------------------------
-    NAVIGATION STYLING 
-    This turns an unordered list in the nav element to a horizontal menu
-    It also sets the color for the navigation.
-    ------------------------------------------------------ */ 
-nav{
-    background-color: #fef6c6;
-    padding: 10px;
-}
-    nav ul{
-    margin: 0;
-    padding: 0;
-}
-nav li
-{
-    display: inline; /* brings nav elements up next to each other */
-    list-style-type: none; /* removes the bullet points */
-    padding-right: 20px; /* spaces them out from each other. Adjust to suit your needs */
-}
-/* Change this to whatever color you want your nav and visited nav links to be */
-nav li a{
-    color: #1313f1;
-    border-bottom: none;
-}
-nav li a:visited{
-    color: #1313f1;
-    
+img, video{
+	max-width: 100%;
+	height: auto;
 }
 
-/*  ------------------------------------------------------
-    MEDIA STYLING 
-    These styles affect how images and audio look on the page.
-    ------------------------------------------------------ */ 
-/* Responsive Image Base */
-img,video{
-    max-width: 100%; 
-    height: auto;
-}
-
-/* Styling for video embeded with iframe */
 .videoWrapper {
     position: relative;
     padding-top: 25px;
