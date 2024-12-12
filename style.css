@@ -5,6 +5,7 @@ html{
   }
 figcaption{
   color: whitesmoke;
+  font-size: 0.75rem;
 }
 a{
     color: beige;
@@ -82,3 +83,4 @@ img, video{
     width: 100%;
     height: 100%;
   }
+  
